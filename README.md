@@ -1,4 +1,5 @@
-# tensor_product_chebyshev
+# tensor_product_chebyshev.jl
+## Apriximate multivariate function with chebyshev polynomial in Julia!
 This repository provides a data structure and set of methods for aproximating multidimensional functions with chebyshev poynomials. These function aproximation methods should be very useful for dynamic programming and other applications that solve for arbitrary continuous functions. 
 
 The library is based around a single data structure, a mutable struct call `interpolation`. It stores data that describe the number of dimensions of the function the domain of the function and the number of nodes used for the aproximation. The value of the function at the nodes and a vector of polynomial coeficents used to represent the function are also stored and can be used to evaluate the function at points that lie off of the grid. 
